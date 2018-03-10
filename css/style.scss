@@ -1,0 +1,16 @@
+@mixin header_footer_color{
+	background-color: #292b2c;
+}
+@mixin color_text_menu{
+	color: white!important;
+}
+@mixin hover_color_menu{
+	color: red !important;
+	transition: all .5s linear;
+} 
+
+
+
+
+@import "includes/index";
+
