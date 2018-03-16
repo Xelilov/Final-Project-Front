@@ -229,28 +229,70 @@ body {
 @media (max-width: 575px) {
   .text-right {
     text-align: left !important; } }
-._cl_price_text_decor {
-  text-decoration: line-through; }
+._product_price_content {
+  padding: 10px 0px; }
+  ._product_price_content ._cl_price_text_decor {
+    text-decoration: line-through; }
 
-._cl_sale_color {
-  margin-left: 20px;
-  color: red; }
+._product_sale_content {
+  padding: 10px 0px; }
+  ._product_sale_content ._cl_sale_color {
+    margin-left: 20px;
+    color: red; }
 
-._cl_product_shipping {
-  font-size: 13px; }
+._product_color_content {
+  padding: 10px 0px; }
+  ._product_color_content ._product_color {
+    margin: 5px 0px;
+    width: 35px;
+    height: 20px;
+    cursor: pointer; }
 
-._cl_product_location {
-  margin-left: 5px; }
+@media (max-width: 575px) {
+  ._product_color {
+    margin: 10px 0px; } }
+._product_size_content {
+  padding: 10px 0px; }
+  ._product_size_content ._product_size {
+    text-align: center;
+    width: 30px;
+    height: 20px;
+    border: 1px solid #8798b5;
+    font-size: 13px;
+    cursor: pointer; }
 
-._cl_product_shipping_day {
-  margin-left: 5px; }
+._product_shipping_content {
+  padding: 10px 0px; }
+  ._product_shipping_content ._cl_product_shipping {
+    font-size: 13px; }
+  ._product_shipping_content ._cl_product_location {
+    margin-left: 5px; }
+  ._product_shipping_content ._cl_product_shipping_day {
+    margin-left: 5px; }
 
-._quantity_text {
-  padding-top: 10px; }
-
-._quantity_content {
-  margin-left: 50px;
-  margin-top: 10px; }
+._product_quantity_content {
+  padding: 10px 0px; }
+  ._product_quantity_content ._quantity_text {
+    padding-top: 10px; }
+  ._product_quantity_content ._quantity_content {
+    margin-left: 50px;
+    margin-top: 10px; }
+  ._product_quantity_content .quantity-left-minus {
+    max-height: 0px;
+    min-height: 0px;
+    line-height: 0px;
+    padding: 15px 18px !important; }
+  ._product_quantity_content .quantity-right-plus {
+    max-height: 0px;
+    min-height: 0px;
+    line-height: 0px;
+    padding: 15px 18px !important; }
+  ._product_quantity_content ._quantity_input {
+    margin-top: 6px;
+    width: 50px;
+    height: 30px; }
+  ._product_quantity_content ._quantity_margin {
+    margin-left: -15px; }
 
 @media (max-width: 767px) {
   ._quantity_content {
@@ -258,43 +300,54 @@ body {
 @media (max-width: 575px) {
   ._quantity_content {
     margin-left: -10px; } }
-.quantity-left-minus {
-  max-height: 0px;
-  min-height: 0px;
-  line-height: 0px;
-  padding: 15px 18px !important; }
-
-.quantity-right-plus {
-  max-height: 0px;
-  min-height: 0px;
-  line-height: 0px;
-  padding: 15px 18px !important; }
-
-._quantity_input {
-  margin-top: 6px;
-  width: 50px;
-  height: 30px; }
-
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
-._quantity_margin {
-  margin-left: -15px; }
+._product_totalprice_content {
+  padding: 10px 0px; }
 
-._cl_button {
-  margin-left: 50px; }
+._product_button_content {
+  padding: 10px 0px; }
+  ._product_button_content ._cl_button {
+    margin-left: 50px; }
 
-._payments_img {
-  width: 65px;
-  height: 45px;
-  margin-left: 10px; }
-
-._payments_text_margin {
-  margin-top: 10px; }
-
-._payments_margin {
+._product_payments_content {
+  padding: 10px 0px;
   margin-top: 30px; }
+  ._product_payments_content ._payments_img {
+    width: 65px;
+    height: 45px;
+    margin-left: 10px; }
+  ._product_payments_content ._payments_text_margin {
+    margin-top: 10px; }
+
+._product_other {
+  margin-top: 20px;
+  padding: 50px 0px;
+  border-top: 2px solid black; }
+  ._product_other a {
+    color: black; }
+
+/*<!-- <<================== Login =================>> -->*/
+#_login_id {
+  background-color: #2b4266; }
+  #_login_id ._logo_site img {
+    margin-top: 110px;
+    width: 150px;
+    height: 50px; }
+  #_login_id ._login {
+    background-color: white;
+    width: 450px;
+    margin: 10px 0px 114px 0px;
+    border: 1px solid grey;
+    padding: 40px; }
+  #_login_id ._register_tabs {
+    margin-left: 80px !important; }
+  #_login_id ._login_register_tabs {
+    margin-bottom: 50px; }
+  #_login_id ._registr_tabs {
+    padding-left: 30px; }
 
 /*# sourceMappingURL=style.css.map */

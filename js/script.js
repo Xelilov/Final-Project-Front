@@ -97,3 +97,18 @@ var quantitiy=0;
     });
     
 });
+
+// <<<<<<<<<<<<<<<<<<<<<<<  Color Select <<<<<<<<<<<<<<<<<<<<<< \\
+
+$("._product_color").click(function(){
+    $("._product_color").css('border', 'none');
+    $("._product_size").css('border', '1px solid #8798b5');
+    $(this).css('border', '2px solid #2c3544');
+})
+
+// <<<<<<<<<<<<<<<<<<<<<<<  Size Select <<<<<<<<<<<<<<<<<<<<<< \\
+
+$("._product_size").click(function(){
+    $("._product_size").css('border', '1px solid #8798b5');
+    $(this).css('border', '2px solid #2c3544');
+})

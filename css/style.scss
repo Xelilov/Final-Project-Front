@@ -78,9 +78,14 @@ body{
 	border-bottom: 1px solid #445166;
 }
 
+@mixin product_content_padding{
+	padding: 10px 0px;
+}
+
 @mixin product_sale_time_color{
 	color: red;
 }
+
 
 
 /*<<<<<<<<< Common Class>>>>>>*/
@@ -179,4 +184,5 @@ body{
 @import "includes/index";
 @import "includes/clothing";
 @import "includes/pants";
-@import "includes/product"
+@import "includes/product";
+@import "includes/login"
