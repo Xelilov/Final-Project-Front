@@ -1,4 +1,16 @@
 
+
+// <<<<<<<<<<<<<<<<<<<<<<< navbar<<<<<<<<<<<<<<<<<<<<<< \\
+
+$(".nav-item").click(function(){
+
+    if ($(this).children().attr("aria-expanded")=="true") {
+        $(this).children().removeAttr("data-toggle")
+    }
+     console.log($(this).children().attr("aria-expanded"))
+})
+
+
 // <<<<<<<<<<<<<<<<<<<<<<< Index.html<<<<<<<<<<<<<<<<<<<<<< \\
 
 $('#index_slider .owl-carousel').owlCarousel({
@@ -56,6 +68,7 @@ $('#clothing_content .owl-carousel').owlCarousel({
 
 
 
+
 // <<<<<<<<<<<<<<<<<<<<<<<  Product <<<<<<<<<<<<<<<<<<<<<< \\
 
 var old_img=$('._cl_product_img img').attr('src')
@@ -82,18 +95,20 @@ $("._cl_product_img_list div div div img").mouseleave(function(){
 $(document).ready(function(){
 
 var quantitiy=0;
-   $('.quantity-right-plus').click(function(e){
-        e.preventDefault();
-        var quantity = parseInt($('#quantity').val());
-        $('#quantity').val(quantity + 1);
+   $('.quantity-left-minus').click(function(e){
+        // e.preventDefault();
+        var quantity = parseInt($(this).parent().next().val());
+       if(quantity>0){
+         $(this).parent().next().val(quantity - 1);
+       }
     });
 
-     $('.quantity-left-minus').click(function(e){
+     $('.quantity-right-plus').click(function(e){
         e.preventDefault();
-        var quantity = parseInt($('#quantity').val());
-        if(quantity>0){
-            $('#quantity').val(quantity - 1);
-            }
+        var quantity = parseInt( $(this).parent().prev().val());
+        
+            $(this).parent().prev().val(quantity + 1);
+            
     });
     
 });

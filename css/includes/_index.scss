@@ -10,6 +10,17 @@
 		height: 50px;
 		margin-top: 10px;
 	}
+	._header_icons{
+		font-size: 20px;
+		padding-top: 20px;
+		._user_bag{
+			margin-right: 30px;
+			color: red;
+		}
+		a{
+			color: white;
+		}
+	}
 }
 .navbar{
 	box-shadow: 0 0 0 0!important;
@@ -46,11 +57,14 @@
 	position: relative;
 }
 .owl-prev{
+	display: none;
 	position: absolute;
 	left: 1%;
 	top: 45%
+
 }
 .owl-next{
+	display: none;
 	position: absolute;
 	right: 1%;
 	top: 45%;
@@ -102,10 +116,11 @@
 ._col_padding{
 	padding: 0px;
 	margin: 0px;
-	overflow: hidden;	
+	overflow: hidden;
 }
 ._cl_zoom:hover{
 	transform: scale(1.1,1.1);
+	transition: 0.3s linear;
 }
 
 

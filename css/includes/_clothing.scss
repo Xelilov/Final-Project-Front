@@ -1,12 +1,5 @@
 
-/*<<=============Item Header Search=============>>*/
 
-#header_search{	
-	a{
-		@include item_text_decor;
-		@include item_text_color; 
-	}
-}
 
 
 /*<<=============clothing item blog=============>>*/
@@ -24,6 +17,9 @@
 
 ._cl_category{
 	@include border_bottom_category_line;
+	a{
+		color: blue!important;
+	}
 	
 }
 ._cl_sub_categoty{

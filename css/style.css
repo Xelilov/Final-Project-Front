@@ -93,6 +93,14 @@ body {
     width: 200px;
     height: 50px;
     margin-top: 10px; }
+  #header ._header_icons {
+    font-size: 20px;
+    padding-top: 20px; }
+    #header ._header_icons ._user_bag {
+      margin-right: 30px;
+      color: red; }
+    #header ._header_icons a {
+      color: white; }
 
 .navbar {
   box-shadow: 0 0 0 0 !important; }
@@ -122,11 +130,13 @@ body {
   position: relative; }
 
 .owl-prev {
+  display: none;
   position: absolute;
   left: 1%;
   top: 45%; }
 
 .owl-next {
+  display: none;
   position: absolute;
   right: 1%;
   top: 45%; }
@@ -162,7 +172,8 @@ body {
   overflow: hidden; }
 
 ._cl_zoom:hover {
-  transform: scale(1.1, 1.1); }
+  transform: scale(1.1, 1.1);
+  transition: 0.3s linear; }
 
 /*<<=============Item Blog=============>>*/
 #item_blog {
@@ -183,11 +194,6 @@ body {
   font-size: 50px;
   margin-left: 10px; }
 
-/*<<=============Item Header Search=============>>*/
-#header_search a {
-  text-decoration: none;
-  color: black; }
-
 /*<<=============clothing item blog=============>>*/
 #clothing_content a {
   text-decoration: none;
@@ -198,6 +204,8 @@ body {
 
 ._cl_category {
   border-bottom: 2px solid #445166; }
+  ._cl_category a {
+    color: blue !important; }
 
 ._cl_sub_categoty ul {
   list-style-type: none; }
@@ -349,5 +357,65 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 50px; }
   #_login_id ._registr_tabs {
     padding-left: 30px; }
+
+tr th:last-child {
+  width: 300px; }
+
+tr td:last-child {
+  width: 300px; }
+
+#bissnes_header {
+  padding: 20px 0px; }
+  #bissnes_header ._go_index img {
+    width: 200px;
+    height: 60px; }
+  #bissnes_header ._bisnes_icon {
+    font-size: 40px;
+    cursor: pointer; }
+
+#_product_datatables label {
+  margin-top: 10px; }
+#_product_datatables .dataTables_info {
+  margin-bottom: 10px; }
+
+/*<<<<<<<<<<<<<<<Bag>>>>>>>>>>>>>>>>*/
+#_bag_content h2, #_bag_content h5 {
+  padding: 10px 0px; }
+
+._bag_content {
+  border: 2px solid grey;
+  padding: 15px;
+  margin: 20px 0px; }
+  ._bag_content ._buy {
+    margin-top: 55%; }
+
+._bag_empty {
+  width: 700px;
+  margin-top: 100px; }
+  ._bag_empty ._text_header {
+    margin-bottom: 60px; }
+
+._bag_quantity {
+  margin-left: -5px;
+  padding: 10px 0px; }
+  ._bag_quantity ._quantity_content {
+    margin-left: 50px;
+    margin-top: 10px; }
+  ._bag_quantity .quantity-left-minus {
+    max-height: 0px;
+    min-height: 0px;
+    line-height: 0px;
+    padding: 15px 18px !important; }
+  ._bag_quantity .quantity-right-plus {
+    max-height: 0px;
+    min-height: 0px;
+    line-height: 0px;
+    padding: 15px 18px !important; }
+  ._bag_quantity ._quantity_input {
+    margin-top: 6px;
+    width: 50px;
+    height: 30px; }
+  ._bag_quantity ._quantity_margin {
+    margin-left: -15px; }
 
 /*# sourceMappingURL=style.css.map */
